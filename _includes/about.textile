@@ -1,0 +1,44 @@
+<div class="slide-parrent">
+	<a name="about" class="anchor"><br/></a>
+	<div class="slide about">
+		<div class="slide-inner clearfix">
+			<div class="lefter fl">
+				<h2>Web Species Ltd provides bespoke <strong>software solutions</strong>, <strong>consulting</strong> and <strong>training services</strong> based on our open-source technologies expertise</h2>
+				<p>
+					Based in <strong>Edinburgh, UK</strong> we were established in late 2010 to create software solutions and provide services centred on web technologies. We think web is the future, more and more applications will be accessible using web interface and online presence is a requirement for any modern business, so our goal is to help with this using our years and years of experience.
+				</p>
+				<p>
+					Internet allows markets to be expanded, thus we do not focus on UK only and a lot of our clients are Europe and USA based companies. We are young, determined and very professional - our main priority is always the customer, you, and we will work hard to suit your needs. If needed, we can even fly to anywhere you are located and have a chat.
+				</p>
+				<div class="clearfix cols-2">
+					<div class="col fl">
+						<h3>Mission Statement</h3>
+						<p>
+							Make web a <em>better place</em> by creating high quality software solutions, integrated systems and business tools, and help other companies and teams by delivering training courses and consulting to bring them up to date.
+						</p>
+						<p>
+    						And have fun while doing it.
+						</p>
+					</div>
+					<div class="col fr">
+						<h3>Our Vision</h3>
+						<p>
+							To be <em>the</em> web solutions provider in UK. 
+						</p>
+						<p>
+						    There are a lot of companies already providing web solutions, but we see where we can be better. 
+						</p>
+					</div>
+				</div>
+			</div><!--// lefter-->
+			<div class="righter fr">
+				<img src="/images/JOE.png" alt="Juozas Kaziukenas" />
+				<a href="http://juokaz.com/"><br/></a>
+				<span class="person">
+					<span>Juozas <br> Kaziukenas</span><br/>
+					Founder, CEO
+				</span>
+			</div><!--// righter-->
+		</div><!--// slide-inner-->
+	</div><!--// slide-->
+</div><!--// slide-parrent -->

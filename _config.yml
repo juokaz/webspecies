@@ -1,0 +1,2 @@
+permalink: /news/:title.html
+exclude: nginx build.xml config.properties lib

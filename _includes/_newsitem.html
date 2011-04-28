@@ -1,0 +1,13 @@
+<div class="col{% if forloop.last %} col-last{% endif %}">
+	<p>
+		<a href="{{ post.id }}" title="{{ post.title }}"><strong>{{ post.title }}</strong></a><br/>
+		{% if post.summary %}
+    		{{ post.summary }} [...]
+        {% else %}
+    		{{ post.content | truncate: 80, '[...]' }}
+		{% endif %}
+	</p>
+	<p class="date">
+		--- {{ post.date | date: "%B %d, %Y" }}
+	</p>
+</div>

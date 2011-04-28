@@ -1,0 +1,36 @@
+<div class="slide-parrent">
+	<a name="clients" class="anchor"><br/></a>
+	<div class="slide clients">
+		<div class="slide-inner clearfix">
+			<div class="lefter fl">
+				<div class="customer-buble">
+					<h2>Clients' <strong>testimonials</strong></h2>
+					<div class="quoted">
+						<p>
+							We wanted to leverage cloud computing in our existing technology stack. Web Species helped us to migrate legacy applications to Microsoft Azure cloud. Their level of knowledge and experience was exceptional, project was finished in time and worked exactly as we wanted it to. You can't ask for more.
+						</p>
+						<span class="quote q-top"><br/></span>
+						<span class="quote q-bottom"><br/></span>
+					</div>
+					<p class="tac">
+						<em>Managing Director, <br/>Englor Limited</em>
+					</p>
+				</div>
+			</div><!--//lefter-->
+			<div class="righter fr">
+				<p>
+					<a href="http://www.oxodesign.no/"><img src="/images/clients/oxodesign.png" width="150" height="80" alt="OXODesign"></a>
+					<a href="http://www.morrismediaworks.com/"><img src="/images/clients/morrismediaworks.png" width="150" height="80" alt="Morris Mediaworks"></a>
+				</p>
+				<p>
+					<a href="http://www.4cinc.com/"><img src="/images/clients/4cinc.png" width="150" height="80" alt="4C Media"></a>
+					<a href="http://www.englor.co.uk/"><img src="/images/clients/englor.png" width="150" height="80" alt="Englor"></a>
+				</p>
+				<p>
+					<strong>Brands we had pleasure to work with:</strong><br>
+					<em>OXODesign TEAM, Morris Mediaworks, 4C Media, Englor</em>							
+				</p>
+			</div><!--// righter-->
+		</div><!--// slide-inner-->
+	</div><!--// slide-->
+</div><!--// slide-parrent-->

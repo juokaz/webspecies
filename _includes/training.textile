@@ -1,0 +1,121 @@
+<div class="slide-parrent">
+	<a name="training" class="anchor"><br/></a>
+	<div class="slide training">
+		<div class="slide-inner clearfix">
+			<div class="lefter fl">
+				<h2>Get training courses from <strong>capable professionals</strong></h2>
+				<p>
+			        Standard schedule is always published, but we are looking forward to talking to you about what specific knowledge you want to gain and can even <strong>come to your office</strong> to deliver training.
+				</p>
+				<ul class="menu" id="courses-list">
+					<li>
+						<a href="#" id="course_link_1">PHP Training</a>
+					</li>
+					<li>
+						<a href="#" id="course_link_2">Zend Framework Training</a>
+					</li>
+					<li>
+						<a href="#" id="course_link_3">Symfony Training</a>
+					</li>
+					<li>
+						<a href="#" id="course_link_4">Doctrine ORM Training</a>
+					</li>
+				</ul>
+			</div><!--// lefter-->
+			<div class="righter fr">
+				<div class="slider" id="courses-slider">
+					<div class="slider-wrapper">
+						<ul class="slider-inner clearfix" id="carousele2">
+							<li class="slider-slide clearfix cols-3">
+								<h3><strong>PHP training</strong> £400</h3>
+								<p>
+									<em>PHP is the most popular language to create web applications by a big <a href="http://w3techs.com/blog/entry/highlights_of_web_technology_surveys_november_2010">margin</a> and we are here to help to get started. Creating dynamic applications with a database to store all the data is what you are going to know how to do after finishing this course.</em>
+								</p>
+								<p>
+									<strong>Course sessions:</strong>
+								</p>
+								<p>
+								To be announced
+								</p>
+								<p>
+									<strong>Location:</strong>
+								</p>
+								<p class="black">
+									London
+								</p>	
+								<p>
+									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
+								</p>		
+							</li><!--// slider-slide-->
+							<li class="slider-slide clearfix cols-3">
+								<h3><strong>Zend Framework</strong> £500</h3>
+								<p>
+									<em>Mastering <a href="http://framework.zend.com/">Zend Framework</a> is an essential skill for any PHP developer nowadays. However it's known to have a quite high entry barrier, that's why we have designed this course to help you get started and show you how it can be used for creating full websites.</em>
+								</p>
+								<p>
+									<strong>Course sessions:</strong>
+								</p>
+								<p>
+								To be announced
+								</p>
+								<p>
+									<strong>Location:</strong>
+								</p>
+								<p class="black">
+									London
+								</p>	
+								<p>
+									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
+								</p>		
+							</li><!--// slider-slide-->
+							<li class="slider-slide clearfix cols-3">
+								<h3><strong>Symfony training</strong> £500</h3>
+								<p>
+									<em><a href="http://symfony.com/">Symfony</a> is one of the leading PHP web frameworks available and we are the first company in UK to offer training for it. Learn a wide variety of topics based around the new <strong>Symfony 2</strong> framework starting from very basics and finishing with advanced use cases.</em>
+								</p>
+								<p>
+									<strong>Course sessions:</strong>
+								</p>
+								<p>
+								To be announced
+								</p>
+								<p>
+									<strong>Location:</strong>
+								</p>
+								<p class="black">
+									London
+								</p>	
+								<p>
+									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
+								</p>		
+							</li><!--// slider-slide-->
+							<li class="slider-slide clearfix cols-3">
+								<h3><strong>Doctrine ORM training</strong> £500</h3>
+								<p>
+									<em>Using databases in PHP projects should be easy and we believe <a href="http://www.doctrine-project.org/">Doctrine</a> makes a perfect tool for this. If you haven't worked with ORMs before you will be introduced to this technology so you can then join others in exploring how it works, integrates with existing systems and get up to speed.</em>
+								</p>
+								<p>
+									<strong>Course sessions:</strong>
+								</p>
+								<p>
+								To be announced
+								</p>
+								<p>
+									<strong>Location:</strong>
+								</p>
+								<p class="black">
+									London
+								</p>	
+								<p>
+									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
+								</p>		
+							</li><!--// slider-slide-->
+						</ul><!--// slider-inner-->
+					</div>
+					<a href="#" class="control prev" id="service2-prev"><br /></a>
+					<a href="#" class="control next" id="service2-next"><br /></a>
+				</div><!--// courses-slider-->
+			</div><!--// righter-->
+		</div><!--// slide-inner-->
+	</div><!--// slide -->
+</div><!--// slide-parrent -->

@@ -1,0 +1,36 @@
+<div class="slide-parrent">	
+	<a name="news" class="anchor"><br/></a>
+	<div class="slide news">
+		<div class="slide-inner">
+			<div class="slider" id="news-slider">
+				<div class="slider-wrapper">
+					<ul class="slider-inner clearfix" id="carousele3">
+						<li class="slider-slide clearfix cols-3">
+						{% for post in site.posts limit:3 %}
+                            {% include _newsitem.html %}
+                        {% endfor %}
+						</li><!--// slider-slide-->
+						
+					    {% if site.posts.size > 3 %}
+						    <li class="slider-slide clearfix cols-3">
+						    {% for post in site.posts limit:3 offset:3 %}
+                                {% include _newsitem.html %}
+                            {% endfor %}
+						    </li><!--// slider-slide-->
+					    {% endif %}
+						
+					    {% if site.posts.size > 6 %}
+						    <li class="slider-slide clearfix cols-3">
+						    {% for post in site.posts limit:3 offset:6 %}
+        						{% include _newsitem.html %}
+                            {% endfor %}
+						    </li><!--// slider-slide-->
+					    {% endif %}
+					</ul><!--// slider-inner-->
+				</div>
+				<a href="#" class="control prev" id="service3-prev"><br /></a>
+				<a href="#" class="control next" id="service3-next"><br /></a>
+			</div><!--// news-slider-->
+		</div><!--// slide-inner-->
+	</div><!--// slide-->
+</div><!--// slide-parrent-->

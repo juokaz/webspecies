@@ -1,0 +1,58 @@
+<div class="slide-parrent">
+    <a name="services" href="#" class="anchor"><br/></a>
+    <div class="slide services">
+        <div class="slide-inner">
+            <span class="label">Services</span>
+            <div class="slider" id="services-slider">
+                <div class="slider-wrapper">
+	                <ul class="slider-inner clearfix" id="carousel1">
+		                <li class="slider-slide">
+			                <h1><strong>Providing solutions for business</strong> based on open-source technologies</h1>
+			                <p>
+				                Web Species Ltd provides bespoke software solutions, consulting and training services based on our open-source technologies expertise. We love quality, innovation and performance, and when it comes to web projects <strong>we make them happen</strong>. Be it a basic company website or a complicated business application - developing it will make us happy and when it's finished you'll hopefully feel the same.
+			                </p>
+		                </li><!--// slider-slide-->
+		                <li class="slider-slide">
+			                <h1><strong>Developing websites and apps</strong> with a perfect tools set</h1>
+			                <p>
+				                To minimize project' costs, reduce development time and make it easier to adapt we tend to use proved systems like <strong>Joomla</strong>, <strong>Drupal</strong> or <strong>Wordpress</strong>. But when it comes to solving complex problems we dive right in and provide bespoke solutions based on popular frameworks <strong>Zend Framework</strong> and <strong>Symfony</strong>. And these are just to name a few from PHP world, we feel comfortable with Python and .Net technologies also.
+			                </p>
+		                </li><!--// slider-slide-->
+		                <li class="slider-slide">
+			                <h1><strong>Training and in-house consulting</strong> to improve your teams' efficiency</h1>
+			                <p>
+                                We like to share what we know and we do it in two forms: training and consulting. Standard schedule is always published, but we are looking forward to talking to you about what specific knowledge you want to gain and can even <strong>come to your office</strong> to deliver training. Consulting your development team can make a huge difference in their efficiency and <strong>quality</strong>, that's why we provide consulting for all the technologies we work with.
+			                </p>
+		                </li><!--// slider-slide-->
+	                </ul><!--// slider-inner-->
+                </div>
+                <div class="dots" style="z-index:100;"></div>
+                <a href="#" class="control prev" id="service-prev"><br /></a>
+                <a href="#" class="control next" id="service-next"><br /></a>
+            </div><!--// services-slider-->
+            <div class="bubles">
+                <div class="item-1">
+	                <h2>Development</h2>
+	                <p>
+		                We specialize in developing websites and web apps with leading CMSes and frameworks
+	                </p>
+                </div>
+                <div class="item-2">
+	                <div class="item-in">
+		                <h2><strong>Training</strong></h2>
+		                <p>
+			                Our experts offer training courses in major UK cities or privately at your office. To see the courses schedule press bellow
+		                </p>
+		                <a href="/training" class="shedule menu-link">TRAINING COURSES SCHEDULE</a>
+	                </div>
+                </div>
+                <div class="item-3">
+	                <h2>Consulting</h2>
+	                <p>
+		                Need help with a project your team is working on? We just might be able to help. <a href="/contact" class="menu-link">Get in touch!</a>
+	                </p>
+                </div>
+            </div><!--// bubles-->
+        </div><!--// slide-inner-->
+    </div><!--// slide-->
+</div><!--// slide-parrent-->
