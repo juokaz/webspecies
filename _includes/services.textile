@@ -41,7 +41,7 @@
 	                <div class="item-in">
 		                <h2><strong>Training</strong></h2>
 		                <p>
-			                Our experts offer training courses in major UK cities or privately at your office. To see the courses schedule press bellow
+			                Our experts offer training courses in major UK cities or privately at your office. To see the courses schedule press below
 		                </p>
 		                <a href="/training" class="shedule menu-link">TRAINING COURSES SCHEDULE</a>
 	                </div>
