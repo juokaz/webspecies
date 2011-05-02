@@ -125,6 +125,11 @@ function addHistory(title, url, section) {
     }
     
     History.pushState(null,title,url);
+	
+    // Inform Google Analytics of the change
+    if ( typeof window._gaq !== 'undefined' ) {
+        window._gaq.push(['_trackPageview', url]);
+    }
 }
 
 function fixExternalLinks() {
@@ -268,11 +273,6 @@ $(function(){
 
         var scroll_to_active_content = function(href) {
 	        addHistory($("#main-menu a[href='"+href+"']").attr('title'),href);
-	
-	        // Inform Google Analytics of the change
-	        if ( typeof window.pageTracker !== 'undefined' ) {
-		        window.pageTracker._trackPageview(href);
-	        }
         };
 
         $("#main-menu a, #slide-top, .menu-link").live('click', function(event){
