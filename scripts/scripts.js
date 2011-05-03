@@ -188,6 +188,25 @@ function handleNews(url) {
     }
 }
 
+function handleTraining(url) {
+    url = url.replace(/^\//, '');
+    
+    if (url.search('training/') == 0) {
+        // load training info
+    } else if (url.search('training') == 0) {
+        // show training
+        // hide training info
+    }
+}
+
+function handleSections(topUrl, relativeUrl) {
+    if (topUrl == 'news') {
+        handleNews(relativeUrl);
+    } else if (topUrl == 'training') {
+        handleTraining(relativeUrl);
+    }
+}
+
 function gotoActiveSlide() {       
     fixParameters();
     
@@ -266,9 +285,7 @@ $(function(){
             m += '@';
             $('.type-mail a').append(m + 'WebSpecies.co.uk').attr('href', 'mailto:' + m + 'webspecies.co.uk');
             
-            if (topUrl == 'news') {
-                handleNews(relativeUrl);
-            }
+            handleSections(topUrl, relativeUrl);
         });
 
         var scroll_to_active_content = function(href) {
@@ -289,7 +306,7 @@ $(function(){
   	        // Continue as normal for cmd clicks etc
 	        if ( event.which == 2 || event.metaKey ) { return true; }
 
-	        addHistory($(this).attr('title'),$(this).attr('href'), 'News');
+	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/news"]').attr('title'));
             handleNews($(this).attr('href'));
         
 	        event.preventDefault();
@@ -299,16 +316,24 @@ $(function(){
         $('.newsitem h2 a, .newsitem a.inactive').live('click', function() {
             return false;
         });
+        
+        $('.training .button-2').live('click', function(event) {
+	        // Continue as normal for cmd clicks etc
+	        if ( event.which == 2 || event.metaKey ) { return true; }
+        
+	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/training"]').attr('title'));
+            handleTraining($(this).attr('href'));
+            
+	        event.preventDefault();
+            return false;
+        });
 
         // Hook into State Changes
         History.Adapter.bind(window,'statechange',function(){ 
 	        var relativeUrl = History.getState().url.replace(rootUrl,''),
                 topUrl = relativeUrl.split('/')[0];
             
-            // check if its news slide
-            if (topUrl == 'news') {
-                handleNews(relativeUrl);
-            }
+            handleSections(topUrl, relativeUrl);
                 
             $("#main-menu a").removeClass('active');
             $("#main-menu a[href='/"+topUrl+"']").addClass('active');

@@ -45,7 +45,7 @@
 								</p>	
 								<p>
 									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/php" class="button button-2">MORE INFORMATION</a>
+									<a href="/training/php" class="button button-2" title="PHP training">MORE INFORMATION</a>
 								</p>		
 							</li><!--// slider-slide-->
 							<li class="slider-slide clearfix cols-3">
@@ -67,7 +67,7 @@
 								</p>	
 								<p>
 									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/zend-framework" class="button button-2">MORE INFORMATION</a>
+									<a href="/training/zend-framework" class="button button-2" title="Zend Framework training">MORE INFORMATION</a>
 								</p>		
 							</li><!--// slider-slide-->
 							<li class="slider-slide clearfix cols-3">
@@ -89,7 +89,7 @@
 								</p>	
 								<p>
 									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/symfony" class="button button-2">MORE INFORMATION</a>
+									<a href="/training/symfony" class="button button-2" title="Symfony training">MORE INFORMATION</a>
 								</p>		
 							</li><!--// slider-slide-->
 							<li class="slider-slide clearfix cols-3">
@@ -111,7 +111,7 @@
 								</p>	
 								<p>
 									<a href="/contact" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/doctrine" class="button button-2">MORE INFORMATION</a>
+									<a href="/training/doctrine" class="button button-2" title="Symfony training">MORE INFORMATION</a>
 								</p>		
 							</li><!--// slider-slide-->
 						</ul><!--// slider-inner-->
