@@ -196,6 +196,7 @@ function handleTraining(url) {
             $('body').append('<div class="popup" />');
         }
         $('.popup').load('/' + url + ' .slide-inner', function() {
+            $('.popup').append('<div class="close" />');
             $('.popup').lightbox_me({
                 centered: true,
                 overlaySpeed: 0,
@@ -203,7 +204,8 @@ function handleTraining(url) {
                 destroyOnClose: true,
                 onClose: function() {
                     $('#main-menu a[href="/training"]').click();
-                }
+                },
+                overlayCSS:	{background: 'black', opacity: .8}
             });
             $(document.body).css('overflow', 'hidden');
         });
