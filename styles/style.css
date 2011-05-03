@@ -225,6 +225,7 @@ header .tweet {font-size: 32px; font-weight: bold; color: #fff; line-height: 32p
 /*News item*/
 .newsitem strong {font-weight: normal; font-size: 26px;}
 .newsitem a {text-decoration: none;}
+.newsitem p a {text-decoration: underline; color: black}
  
 /*Contacts*/ 
 .contact {color: #575656; background: url(../images/black-dot-transp.png); margin-bottom: 0 !important;}
