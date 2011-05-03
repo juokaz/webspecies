@@ -7,7 +7,7 @@
         <property name="YUI" value="lib/yuicompressor.jar" description="YUICompressor" />
 
         <target name="empty">
-            <echo>Please choose what to deploy: all, nginx, website</echo>
+            <echo>Please choose what to deploy: all, nginx, website, staging</echo>
         </target>
 
         <target name="all" depends="nginx, website">
@@ -16,6 +16,13 @@
         <target name="website" depends="sshconfig, build">
             <sshexec host="${deploy.host}" username="${deploy.username}" keyfile="${user.home}/.ssh/id_rsa" passphrase="${passphrase}" command="rm -rf ${deploy.url}/*" failonerror="false"/>
             <scp todir="${deploy.username}@${deploy.host}:${deploy.url}" keyfile="${user.home}/.ssh/id_rsa" passphrase="${passphrase}">
+                <fileset dir="_site" />
+            </scp>
+        </target>
+
+        <target name="staging" depends="sshconfig, build">
+            <sshexec host="${deploy.host}" username="${deploy.username}" keyfile="${user.home}/.ssh/id_rsa" passphrase="${passphrase}" command="rm -rf ${deploy.staging}/*" failonerror="false"/>
+            <scp todir="${deploy.username}@${deploy.host}:${deploy.staging}" keyfile="${user.home}/.ssh/id_rsa" passphrase="${passphrase}">
                 <fileset dir="_site" />
             </scp>
         </target>
