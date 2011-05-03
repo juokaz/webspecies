@@ -68,7 +68,7 @@
         
         <target name="jsconcat">
             <concat destfile="_site/scripts/allscripts.js">
-                <filelist dir="_site/vendors/" files="jquery-1.5.2.min.js, jquery.jcarousel.js, jquery.scrollTo-1.4.2-min.js, jquery.tweet.js, json2.js, history.js, history.html4.js, history.adapter.jquery.js" />
+                <filelist dir="_site/vendors/" files="jquery-1.5.2.min.js, jquery.jcarousel.js, jquery.lightbox_me.js, jquery.scrollTo-1.4.2-min.js, jquery.tweet.js, json2.js, history.js, history.html4.js, history.adapter.jquery.js" />
                 <filelist dir="_site/scripts/" files="scripts.js" />
             </concat>
         </target>

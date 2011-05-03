@@ -192,10 +192,24 @@ function handleTraining(url) {
     url = url.replace(/^\//, '');
     
     if (url.search('training/') == 0) {
-        // load training info
+        if (!$('.popup').length) {
+            $('body').append('<div class="popup" />');
+        }
+        $('.popup').load('/' + url + ' .slide-inner', function() {
+            $('.popup').lightbox_me({
+                centered: true,
+                overlaySpeed: 0,
+                lightboxSpeed: 0,
+                destroyOnClose: true,
+                onClose: function() {
+                    $('#main-menu a[href="/training"]').click();
+                }
+            });
+            $(document.body).css('overflow', 'hidden');
+        });
     } else if (url.search('training') == 0) {
-        // show training
-        // hide training info
+        $('.popup').trigger('close');
+        $(document.body).css('overflow', 'visible');
     }
 }
 
@@ -307,7 +321,6 @@ $(function(){
 	        if ( event.which == 2 || event.metaKey ) { return true; }
 
 	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/news"]').attr('title'));
-            handleNews($(this).attr('href'));
         
 	        event.preventDefault();
             return false;
@@ -322,7 +335,6 @@ $(function(){
 	        if ( event.which == 2 || event.metaKey ) { return true; }
         
 	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/training"]').attr('title'));
-            handleTraining($(this).attr('href'));
             
 	        event.preventDefault();
             return false;
