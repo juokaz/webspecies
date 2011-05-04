@@ -34,7 +34,7 @@
                 <div class="item-1">
 	                <h2>Development</h2>
 	                <p>
-		                We specialize in developing websites and web apps with leading CMSes and frameworks
+		                We specialize in developing websites and web apps with leading CMSes and frameworks. We also write <a href="http://blog.webspecies.co.uk">blog</a> for developers.
 	                </p>
                 </div>
                 <div class="item-2">

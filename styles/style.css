@@ -111,7 +111,7 @@ header .tweet {font-size: 32px; font-weight: bold; color: #fff; line-height: 32p
 .services .bubles p {font-size: 13px; line-height: 16px; color: #777; margin: 5px 0;}
 .services .item-2 p {color: #4c4200;}
 .bubles .item-1, .bubles .item-2, .bubles .item-3 {position: absolute; text-align: center;}
-.bubles .item-1 {background: url(../images/dev-buble.png) no-repeat left top; padding: 72px 15px 25px 15px; width: 203px; height: 140px; top: 99px; left: 23px;} 
+.bubles .item-1 {background: url(../images/dev-buble.png) no-repeat left top; padding: 72px 15px 25px 10px; width: 213px; height: 140px; top: 99px; left: 23px;} 
 .bubles .item-2 {background: url(../images/training-buble.png) no-repeat left top; width: 233px; height: 100px; top: 22px; left: 291px; padding: 60px 15px 92px 15px;} 
 .bubles .item-3 {background: url(../images/consulting-buble.png) no-repeat left top; width: 209px; height: 221px; right: -10px; bottom: -30px; height: 140px; padding: 72px 15px 25px 15px;} 
  
