@@ -188,6 +188,41 @@ function handleNews(url) {
     }
 }
 
+function handleTraining(url) {
+    url = url.replace(/^\//, '');
+    
+    if (url.search('training/') == 0) {
+        if (!$('.popup').length) {
+            $('body').append('<div class="popup" />');
+        }
+        $('.popup').load('/' + url + ' .slide-inner', function() {
+            $('.popup').append('<div class="close" />');
+            $('.popup').lightbox_me({
+                centered: true,
+                overlaySpeed: 0,
+                lightboxSpeed: 0,
+                destroyOnClose: true,
+                onClose: function() {
+                    $('#main-menu a[href="/training"]').click();
+                },
+                overlayCSS:	{background: 'black', opacity: .8}
+            });
+            $(document.body).css('overflow', 'hidden');
+        });
+    } else if (url.search('training') == 0) {
+        $('.popup').trigger('close');
+        $(document.body).css('overflow', 'visible');
+    }
+}
+
+function handleSections(topUrl, relativeUrl) {
+    if (topUrl == 'news') {
+        handleNews(relativeUrl);
+    } else if (topUrl == 'training') {
+        handleTraining(relativeUrl);
+    }
+}
+
 function gotoActiveSlide() {       
     fixParameters();
     
@@ -266,9 +301,7 @@ $(function(){
             m += '@';
             $('.type-mail a').append(m + 'WebSpecies.co.uk').attr('href', 'mailto:' + m + 'webspecies.co.uk');
             
-            if (topUrl == 'news') {
-                handleNews(relativeUrl);
-            }
+            handleSections(topUrl, relativeUrl);
         });
 
         var scroll_to_active_content = function(href) {
@@ -289,8 +322,7 @@ $(function(){
   	        // Continue as normal for cmd clicks etc
 	        if ( event.which == 2 || event.metaKey ) { return true; }
 
-	        addHistory($(this).attr('title'),$(this).attr('href'), 'News');
-            handleNews($(this).attr('href'));
+	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/news"]').attr('title'));
         
 	        event.preventDefault();
             return false;
@@ -299,16 +331,23 @@ $(function(){
         $('.newsitem h2 a, .newsitem a.inactive').live('click', function() {
             return false;
         });
+        
+        $('.training .button-2').live('click', function(event) {
+	        // Continue as normal for cmd clicks etc
+	        if ( event.which == 2 || event.metaKey ) { return true; }
+        
+	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/training"]').attr('title'));
+            
+	        event.preventDefault();
+            return false;
+        });
 
         // Hook into State Changes
         History.Adapter.bind(window,'statechange',function(){ 
 	        var relativeUrl = History.getState().url.replace(rootUrl,''),
                 topUrl = relativeUrl.split('/')[0];
             
-            // check if its news slide
-            if (topUrl == 'news') {
-                handleNews(relativeUrl);
-            }
+            handleSections(topUrl, relativeUrl);
                 
             $("#main-menu a").removeClass('active');
             $("#main-menu a[href='/"+topUrl+"']").addClass('active');

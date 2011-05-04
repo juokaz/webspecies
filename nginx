@@ -62,6 +62,16 @@ server {
         return 404;
     }
     
+    # Display training page, this is required because training folder exists
+    location ~ ^/training$ {
+        rewrite ^ /training.html break;
+    }
+    
+    # Training folder cannot be accessed like this
+    location ~ ^/training/$ {
+        return 404;
+    }
+    
     location /contact-process {
         proxy_pass                       http://webspecies.wufoo.com/forms/z7x3k7/;
         proxy_set_header Host            webspecies.wufoo.com;
