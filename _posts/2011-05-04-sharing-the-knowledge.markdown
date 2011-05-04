@@ -9,6 +9,6 @@ All the things we know, we want to share with the broad developers' community. I
 
 Furthermore, our blog is going to be completely free of business messages - we have this, news, section for this and we want to keep it like that. At the same time we don’t want to push our blog to non-technical people, like managers looking to contact us about potential work. Having a blog will allow us to have a place where we can talk about technologies to the right people.
 
-One of the first things we are going to talk about is how we built our website, because we believe it’s quite an impressive showcase of new web technologies. HTML5 is at a base, but there are tiny interesting pieces like using History API to provide animated user experience, but at the same tame have content for Google search in a clean structure. And this is just to start; we work on a lot of cool technologies on a daily basis and all of this, if possible, is going to be shared.
+One of the first things we are going to talk about is how we built our website, because we believe it’s quite an impressive showcase of new web technologies. HTML5 is at the base, but there are tiny interesting pieces like using History API to provide animated user experience, but at the same time have content for Google search in a clean structure. And this is just to start; we work on a lot of cool technologies on a daily basis and all of this, if possible, is going to be shared.
 
 So make sure to follow our [blog](http://blog.webspecies.co.uk/) and let’s share what we know.
