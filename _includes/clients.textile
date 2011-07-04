@@ -19,11 +19,14 @@
 			</div><!--//lefter-->
 			<div class="righter fr">
 				<p>
+					<a href="http://festivalslab.com/"><img src="/images/clients/festivalslab.png" width="150" height="80" alt="Festivals Lab" /></a>
 					<a href="http://www.oxodesign.no/"><img src="/images/clients/oxodesign.png" width="150" height="80" alt="OXODesign"></a>
-					<a href="http://www.morrismediaworks.com/"><img src="/images/clients/morrismediaworks.png" width="150" height="80" alt="Morris Mediaworks"></a>
 				</p>
 				<p>
+					<a href="http://www.morrismediaworks.com/"><img src="/images/clients/morrismediaworks.png" width="150" height="80" alt="Morris Mediaworks"></a>
 					<a href="http://www.4cinc.com/"><img src="/images/clients/4cinc.png" width="150" height="80" alt="4C Media"></a>
+				</p>
+				<p>
 					<a href="http://www.englor.co.uk/"><img src="/images/clients/englor.png" width="150" height="80" alt="Englor"></a>
 				</p>
 				<p>
