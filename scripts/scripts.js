@@ -261,10 +261,8 @@ $(function(){
         }
             
         // load all content
-        $('.content-slides').css('opacity', 0);
         $('.content-slides').load('/slides', function() {
             gotoActiveSlide();
-            $('.content-slides').css('opacity', 100);
             
             //top carousel
             var top_list_elements_count = $("#carousel1 li").length;
