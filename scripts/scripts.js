@@ -426,7 +426,7 @@ $(function(){
             
     $('#contacts-form').live('submit', function() {
         $('.submit').val('SEND');
-        var data = { Field4: $('#name').val(), Field10: $('#mail').val(), Field7: $('#message').val(), idstamp: "99V5cGfFEep/G4A5fmTnGFFQwEbHrPfR0JcolM72yYg=" };
+        var data = { Field4: $('#name').val(), Field12: $('#mail').val(), Field7: $('#message').val(), idstamp: "99V5cGfFEep/G4A5fmTnGFFQwEbHrPfR0JcolM72yYg=" };
         $.post("/contact-process", data)
             .complete(function(XMLHttpRequest) {
                 if (XMLHttpRequest.status == 302) { 
