@@ -1,0 +1,13 @@
+<div class="slide-parrent">
+	<a name="products" class="anchor"><br/></a>
+	<div class="slide products">
+		<div class="slide-inner clearfix">
+			<div class="lefter fl">
+                A
+			</div><!--// lefter-->
+			<div class="righter fr">
+                B
+			</div><!--// righter-->
+		</div><!--// slide-inner-->
+	</div><!--// slide-->
+</div><!--// slide-parrent -->
