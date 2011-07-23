@@ -118,9 +118,10 @@ header .tweet {font-size: 32px; font-weight: bold; color: #fff; line-height: 32p
 .bubles .item-3 {background: url(../images/consulting-buble.png) no-repeat left top; width: 209px; height: 221px; right: -10px; bottom: -30px; height: 140px; padding: 72px 15px 25px 15px;} 
  
 .item-2 .item-in {position: relative; zoom: 1;}
-.bubles .item-2 .shedule, .bubles a {color: #fff;} 
-.bubles .item-2 .shedule {display: inline-block; text-transform: uppercase; font-size: 11px; background: #000; line-height: 25px; padding: 0 8px; position: absolute; left: 45px; bottom: -48px; text-decoration: none; white-space: nowrap; font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
-.bubles .item-2 .shedule:hover, .bubles a:hover {color: #FEDE00;}
+.bubles .item-2 .shedule, .bubles a, .product {color: #fff;} 
+.bubles .item-2 .shedule, .product {display: inline-block; text-transform: uppercase; font-size: 11px; background: #000; line-height: 25px; padding: 0 8px; text-decoration: none; white-space: nowrap; font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
+.bubles .item-2 .shedule {position: absolute; left: 45px; bottom: -48px;}
+.bubles .item-2 .shedule:hover, .bubles a:hover, .product:hover {color: #FEDE00;}
  
 .services .label {display: inline-block; text-transform: uppercase; color: #a3a1a1; font-size: 10px; padding-left: 100px;} 
 .services h1 {margin: 0; font-size: 38px; color: #000; margin-top: 8px; line-height: 38px; letter-spacing: -1.5px;}
@@ -144,6 +145,11 @@ header .tweet {font-size: 32px; font-weight: bold; color: #fff; line-height: 32p
 #services-slider .slider-wrapper {width: 570px;}
 #services-slider slider-inner {height: 200px;}
 #services-slider .jcarousel-clip {width: 570px; height: 200px;}
+
+/*Products*/ 
+.products .slide-inner {padding: 10px 0;}
+.products .lefter {padding-left: 45px; width: 325px;}
+.products .righter {width: 380px; position: relative; zoom: 1;}
  
 /*About*/ 
 .about .slide-inner {padding: 10px 0;}
