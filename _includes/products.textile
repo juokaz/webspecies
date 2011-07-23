@@ -5,7 +5,23 @@
 			<a href="http://www.sellerscout.co.uk/"><img src="/images/products/sellerscout.png" width="174" height="79" alt="SellerScout" class="fl" /></a>
     		<div class="clearfix"></div>
 			<div class="lefter fl">
-                A
+                <div class="slider" id="products-slider">
+					<div class="slider-wrapper">
+						<ul class="slider-inner clearfix" id="carousele4">
+							<li class="slider-slide clearfix cols-3">
+								<img src="/images/products/sellerscout_screenshot1.png" width="300" height="300 alt="Homepage" />
+							</li><!--// slider-slide-->
+							<li class="slider-slide clearfix cols-3">
+								<img src="/images/products/sellerscout_screenshot2.png" width="300" height="300 alt="Features" />
+							</li><!--// slider-slide-->
+							<li class="slider-slide clearfix cols-3">
+								<img src="/images/products/sellerscout_screenshot3.png" width="300" height="300 alt="Questions" />
+							</li><!--// slider-slide-->
+						</ul><!--// slider-inner-->
+					</div>
+					<a href="#" class="control prev" id="products-prev"><br /></a>
+					<a href="#" class="control next" id="products-next"><br /></a>
+				</div><!--// products-slider-->
 			</div><!--// lefter-->
 			<div class="righter fr">
 				<h2>If you have been selling online long enough you will know that most certainly <strong>having the best price is a key to success.</strong></h2>

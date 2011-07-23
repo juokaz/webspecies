@@ -81,6 +81,27 @@ function carousel3_itemLoadCallback(carousel, state){
   }
 }
 
+function carousel4_initCallback(carousel) {
+    jQuery('#products-prev').bind('click', function() {
+        carousel.prev();
+        return false;
+    });
+ 
+    jQuery('#products-next').bind('click', function() {
+        carousel.next();
+        return false;
+    });
+}
+function carousel4_itemLoadCallback(carousel, state){
+  $("#products-slider .control").removeClass('inactive');
+  if (carousel.first == 1){
+	  $("#products-prev").addClass('inactive');
+  }
+  if (carousel.first == $("#carousele4 li").length){
+	  $("#products-next").addClass('inactive');
+  }
+}
+
 function hoverAnim() {    
     $("#main-menu li a").each(function(i) {
         // make the iteration object a jquery object
@@ -294,6 +315,14 @@ $(function(){
                 buttonNextHTML: null,
                 buttonPrevHTML: null
             });
+
+            $("#carousele4").jcarousel({
+                initCallback: carousel4_initCallback,
+                scroll:1,
+                itemLoadCallback: carousel4_itemLoadCallback,
+                buttonNextHTML: null,
+                buttonPrevHTML: null
+            });
             
             var m = 'info';
             m += '@';
@@ -326,7 +355,7 @@ $(function(){
             return false;
         });
         
-        $('.newsitem h2 a, .newsitem a.inactive').live('click', function() {
+        $('a.inactive').live('click', function() {
             return false;
         });
         

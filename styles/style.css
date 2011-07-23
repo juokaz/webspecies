@@ -148,8 +148,15 @@ header .tweet {font-size: 32px; font-weight: bold; color: #fff; line-height: 32p
 
 /*Products*/ 
 .products .slide-inner {padding: 10px 0;}
-.products .lefter {padding-left: 45px; width: 325px;}
+.products .lefter {padding-right: 45px; padding-left: 20px; width: 325px;}
 .products .righter {width: 380px; position: relative; zoom: 1;}
+#products-slider {width: 300px;}
+#products-slider .control {width: 42px; height: 42px; margin-top: -21px;}
+#products-slider .prev {background: url(../images/prev2.png) no-repeat left top; left: -21px;}
+#products-slider .next {background: url(../images/next2.png) no-repeat right top; right: -21px;}
+#products-slider .inactive {background-position: left -41px;}
+#products-slider .slider-slide {width: 300px; height: 300px;}
+#products-slider .slider-wrapper {width: 300px; margin: 0;}
  
 /*About*/ 
 .about .slide-inner {padding: 10px 0;}
