@@ -24,7 +24,7 @@
 				</div><!--// products-slider-->
 			</div><!--// lefter-->
 			<div class="righter fr">
-				<h2>If you have been selling online long enough you will know that most certainly <strong>having the best price is a key to success.</strong></h2>
+				<h2>If you have been selling online long enough you will know that most certainly <strong>having the best price is the key to success.</strong></h2>
 				<p>
     				Of course you don’t necessary want to be the cheapest one, although this
                     might work really well most of the times, but you at least want to be at
