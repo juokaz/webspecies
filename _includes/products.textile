@@ -2,7 +2,7 @@
 	<a name="products" class="anchor"><br/></a>
 	<div class="slide products">
 		<div class="slide-inner clearfix">
-			<a href="http://www.sellerscout.co.uk/"><img src="/images/products/sellerscout.png" width="174" height="79" alt="SellerScout" class="fl" /></a>
+			<a href="http://www.sellerscout.co.uk/"><img src="/images/products/sellerscout.png" width="174" height="79" alt="SellerScout" class="product-logo" /></a>
     		<div class="clearfix"></div>
 			<div class="lefter fl">
                 <div class="slider" id="products-slider">
