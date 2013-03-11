@@ -5,12 +5,12 @@ function carousel1_initCallback(carousel) {
   $(this).addClass('active');
   return false;
  });
- 
+
     jQuery('#service-prev').bind('click', function() {
         carousel.prev();
         return false;
     });
- 
+
     jQuery('#service-next').bind('click', function() {
         carousel.next();
         return false;
@@ -36,7 +36,7 @@ function carousel2_initCallback(carousel) {
         $(this).addClass('active');
         return false;
     });
- 
+
     jQuery('#service2-prev').bind('click', function() {
      carousel.prev();
      return false;
@@ -65,7 +65,7 @@ function carousel3_initCallback(carousel) {
         carousel.prev();
         return false;
     });
- 
+
     jQuery('#service3-next').bind('click', function() {
         carousel.next();
         return false;
@@ -86,7 +86,7 @@ function carousel4_initCallback(carousel) {
         carousel.prev();
         return false;
     });
- 
+
     jQuery('#products-next').bind('click', function() {
         carousel.next();
         return false;
@@ -102,7 +102,7 @@ function carousel4_itemLoadCallback(carousel, state){
   }
 }
 
-function hoverAnim() {    
+function hoverAnim() {
     $("#main-menu li a").each(function(i) {
         // make the iteration object a jquery object
         var a = $(this);
@@ -110,7 +110,7 @@ function hoverAnim() {
         // grab the text and width
         var title = a.html();
         var w = a.outerWidth();
-        // append a span with the content in, to mask over the link      
+        // append a span with the content in, to mask over the link
         a.append("<span class='mask' style='width: 0px; display: none'>"+title+"</span>");
         // do the hover funcs
         a.hover(function(){
@@ -120,18 +120,18 @@ function hoverAnim() {
             a.find("span").show();
             a.find("span").animate({
               width: w+'px'
-            }, 200, function(){ 
-                animating = false;                          
+            }, 200, function(){
+                animating = false;
             });
     	}, function() {
             a.find("span").animate({
               width: '0px'
-            }, 400, function(){ 
+            }, 400, function(){
                 a.find("span").hide();
-                animating = false;                        
+                animating = false;
             });
     	});
-    });    	
+    });
 }
 
 function addHistory(title, url, section) {
@@ -144,9 +144,9 @@ function addHistory(title, url, section) {
     } else {
         title = "Web Species";
     }
-    
+
     History.pushState(null,title,url);
-	
+
     // Inform Google Analytics of the change
     if ( typeof window._gaq !== 'undefined' ) {
         window._gaq.push(['_trackEvent', 'Menu', 'Click', title]);
@@ -155,20 +155,20 @@ function addHistory(title, url, section) {
 
 function fixExternalLinks() {
     $('a[href^="http://"]').attr({
-        target: "_blank", 
+        target: "_blank",
         title: "Opens in a new window"
       });
 }
 
 function fixParameters (){
     fixExternalLinks();
-    
+
     if ( $(window).width() < 1190) {
 	    $(".slide-inner").css('margin-left', 220 + "px");
     } else {
-	    $(".slide-inner").css('margin-left', 'auto');	
+	    $(".slide-inner").css('margin-left', 'auto');
     };
-    
+
     $(".slide").each(function(){
 	    if($(this).outerHeight() < $(window).height()){
 		    var itemMargin = ($(window).height() - $(this).outerHeight()) /2;
@@ -185,18 +185,18 @@ function fixParameters (){
 
 function handleNews(url) {
     url = url.replace(/^\//, '');
-    
+
     if (url.search('news/') == 0) {
         if (!$('.newsitem').length) {
             $('.news').parent().append('<div class="slide newsitem" style="display: none;" />');
         }
         $('.newsitem').load('/' + url + ' .slide-inner', function() {
-            $('.newsitem').show();    
+            $('.newsitem').show();
             $('.news').hide();
             fixParameters();
         });
     } else if (url.search('news') == 0) {
-        $('.news').show();    
+        $('.news').show();
         $('.newsitem').hide();
         $("#carousele3").jcarousel({
                 initCallback: carousel3_initCallback,
@@ -211,7 +211,7 @@ function handleNews(url) {
 
 function handleTraining(url) {
     url = url.replace(/^\//, '');
-    
+
     if (url.search('training/') == 0) {
         if (!$('.popup').length) {
             $('body').append('<div class="popup" />');
@@ -244,15 +244,15 @@ function handleSections(topUrl, relativeUrl) {
     }
 }
 
-function gotoActiveSlide() {       
+function gotoActiveSlide() {
     fixParameters();
-    
+
     if ($(".static").length == 0) {
-        var topUrl = History.getState().url.replace(History.getRootUrl(),'').split('/')[0];
-         
+        var topUrl = History.getState().url.replace(History.getRootUrl(),'').split('/')[0].replace('.html', '');
+
         if (topUrl !== "") {
             var offset = $("a[name="+topUrl+"]").parent().offset().top;
-            $('html, body').scrollTo(offset, 0, {easing:'swing', duration:0}); 
+            $('html, body').scrollTo(offset, 0, {easing:'swing', duration:0});
         }
     }
 }
@@ -263,9 +263,9 @@ $(function(){
         History = window.History,
 	    rootUrl = History.getRootUrl(),
         url = History.getPageUrl();
-	    
-	fixParameters();    
-	    
+
+	fixParameters();
+
 	if (dynamic) {
 	    // check if homepage
 	    if (rootUrl.replace(url, '') != rootUrl) {
@@ -273,18 +273,18 @@ $(function(){
         } else {
             var relativeUrl = url.replace(/\/$/, '').replace(rootUrl,'');
         }
-        
+
         var topUrl = relativeUrl.split('/')[0];
-		        
-        if (relativeUrl !== "" && $("#main-menu a[href='/"+topUrl+"']").length){
+
+        if (relativeUrl !== "" && $("#main-menu a[href='/"+topUrl.replace('.html', '')+"']").length){
             $("#main-menu a").removeClass('active');
             $("#main-menu a[href='/"+topUrl+"']").addClass('active');
         }
-            
+
         // load all content
-        $('.content-slides').load('/slides', function() {
+        $('.content-slides').load('/slides.html', function() {
             gotoActiveSlide();
-            
+
             //top carousel
             var top_list_elements_count = $("#carousel1 li").length;
             var i=1;
@@ -323,11 +323,11 @@ $(function(){
                 buttonNextHTML: null,
                 buttonPrevHTML: null
             });
-            
+
             var m = 'info';
             m += '@';
             $('.type-mail a').append(m + 'WebSpecies.co.uk').attr('href', 'mailto:' + m + 'webspecies.co.uk');
-            
+
             handleSections(topUrl, relativeUrl);
         });
 
@@ -338,47 +338,47 @@ $(function(){
         $("#main-menu a, #slide-top, .menu-link").live('click', function(event){
 	        // Continue as normal for cmd clicks etc
 	        if ( event.which == 2 || event.metaKey ) { return true; }
-	
+
             scroll_to_active_content($(this).attr('href'));
-            
+
 	        event.preventDefault();
             return false;
         });
-        
+
         $('.news p a, .newsitem a.control:not(.inactive)').live('click', function(event) {
   	        // Continue as normal for cmd clicks etc
 	        if ( event.which == 2 || event.metaKey ) { return true; }
 
 	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/news"]').attr('title'));
-        
+
 	        event.preventDefault();
             return false;
         });
-        
+
         $('a.inactive').live('click', function() {
             return false;
         });
-        
+
         $('.training .button-2').live('click', function(event) {
 	        // Continue as normal for cmd clicks etc
 	        if ( event.which == 2 || event.metaKey ) { return true; }
-        
+
 	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/training"]').attr('title'));
-            
+
 	        event.preventDefault();
             return false;
         });
 
         // Hook into State Changes
-        History.Adapter.bind(window,'statechange',function(){ 
+        History.Adapter.bind(window,'statechange',function(){
 	        var relativeUrl = History.getState().url.replace(rootUrl,''),
-                topUrl = relativeUrl.split('/')[0];
-            
+                topUrl = relativeUrl.split('/')[0].replace('.html', '');
+
             handleSections(topUrl, relativeUrl);
-                
+
             $("#main-menu a").removeClass('active');
-            $("#main-menu a[href='/"+topUrl+"']").addClass('active');
-            
+            $("#main-menu a[href='/"+topUrl+".html']").addClass('active');
+
             if ($("#main-menu a.active").size() > 0) {
                 if (topUrl == '') {
                     topUrl = 'services';
@@ -388,14 +388,14 @@ $(function(){
                 var offset = 0;
             }
             $('html, body').scrollTo(offset, 0, {easing:'swing', duration:400});
-            
+
         }); // end onStateChange
-        
+
         if (History.enabled) {
             $('.info').show();
             $(document).keydown(function(event) {
                 var $curr_mm_item = $("#main-menu a.active");
-                var active_id = $curr_mm_item.attr('href').replace('/', '');
+                var active_id = $curr_mm_item.attr('href').replace('/', '').replace('.html', '');
                 if (active_id == "") {
                     active_id = 'services';
                 }
@@ -429,11 +429,11 @@ $(function(){
            });
         }
     }
-   
+
     hoverAnim();
 
     $(window).resize(fixParameters);
-    $(window).load(gotoActiveSlide);	
+    $(window).load(gotoActiveSlide);
 
     $("input.text, textarea").focus(function () {
 	    $(this).addClass("focus");
@@ -443,7 +443,7 @@ $(function(){
     });
 
     $('#toggle-tweet').toggle(function(){$("#tweet").toggle(200);}, function(){ $("#tweet").toggle(200);});
-    
+
     $("#tweet").tweet({
         avatar_size: 32,
         count: 1,
@@ -452,18 +452,18 @@ $(function(){
         template: '<p class="tweet">{text}</p><p class="time">--- {time}</p>',
         username: "webspecies",
       });
-            
+
     $('#contacts-form').live('submit', function() {
         $('.submit').val('SEND');
         var data = { Field4: $('#name').val(), Field12: $('#mail').val(), Field7: $('#message').val(), idstamp: "99V5cGfFEep/G4A5fmTnGFFQwEbHrPfR0JcolM72yYg=" };
         $.post("/contact-process", data)
             .complete(function(XMLHttpRequest) {
-                if (XMLHttpRequest.status == 302) { 
+                if (XMLHttpRequest.status == 302) {
                     $('#name').val('');
                     $('#mail').val('');
                     $('#message').val('');
                     $('.submit').val('SENT!');
-                } 
+                }
             });
         return false;
     });

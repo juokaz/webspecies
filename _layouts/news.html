@@ -15,17 +15,17 @@ top: News
 		                --- {{ page.date | date: "%B %d, %Y" }}
 	                </p>
                 </div>
-                {% if page.next %} 
-                    <a href="{{ page.next.id }}" title="{{ page.next.title }}" rel="prev" class="control prev" id="service3-prev"><br /></a>
+                {% if page.next %}
+                    <a href="{{ page.next.id }}.html" title="{{ page.next.title }}" rel="prev" class="control prev" id="service3-prev"><br /></a>
                 {% else %}
                     <a href="#" rel="prev" class="control prev inactive" id="service3-prev"><br /></a>
                 {% endif %}
-                {% if page.previous %} 
-                    <a href="{{ page.previous.id }}" title="{{ page.next.title }}" rel="next" class="control next" id="service3-next"><br /></a>
+                {% if page.previous %}
+                    <a href="{{ page.previous.id }}.html" title="{{ page.next.title }}" rel="next" class="control next" id="service3-next"><br /></a>
                 {% else %}
                     <a href="#" rel="next" class="control next inactive" id="service3-next"><br /></a>
                 {% endif %}
             </div><!--// news-slider-->
         </div><!--// slide-inner-->
     </div><!--// slide-->
-</div><!--// slide-parrent -->	
+</div><!--// slide-parrent -->
