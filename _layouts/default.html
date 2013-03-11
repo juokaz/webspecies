@@ -10,11 +10,11 @@
     <meta name="keywords" content="web species, web development, consulting, training, php">
     <meta name="author" content="Web Species Ltd">
     <link rel="shortcut icon" href="/favicon.ico">
-	<link rel="stylesheet" href="/styles/style.min.css?{{site.time | date: '%Y%m%d%H%M%S'}}" />
+	<link rel="stylesheet" href="/styles/style.css?{{site.time | date: '%Y%m%d%H%M%S'}}" />
 	<link rel="alternate" type="application/atom+xml" title="Web Species news (Atom)" href="/atom.xml" />
 	<link rel="alternate" type="application/rss+xml" title="Web Species news (RSS)" href="/rss.xml" />
 	<!--[if IE 6]>
-		<link rel="stylesheet" href="/styles/ie6.min.css?{{site.time | date: '%Y%m%d%H%M%S'}}" type="text/css" />
+		<link rel="stylesheet" href="/styles/ie6.css?{{site.time | date: '%Y%m%d%H%M%S'}}" type="text/css" />
 	<![endif]-->
     <script src="/vendors/modernizr-1.7.min.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
 </head>
@@ -75,15 +75,24 @@
 			</div>
 			<div class="content-slides">
                 {{ content }}
-            </div><!--//content-slides-->	
+            </div><!--//content-slides-->
 		</div><!--// content-->
 	</div><!--// site-->
 	<!--[if lt IE 7 ]>
     <script src="/vendors/dd_belatedpng.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
     <script>DD_belatedPNG.fix('img, .png, .social-links a, .dots a, .info, .bubles .item-1, .bubles .item-2, .bubles .item-3, .prev, .next, .customer-buble, .icon, .submit, header, #toggle-tweet, .courses, .news ');</script>
   	<![endif]-->
-	<script src="/scripts/scripts.min.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
-    <script type="text/javascript"> 
+    <script src="/vendors/jquery-1.5.2.min.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/jquery.jcarousel.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/jquery.lightbox_me.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/jquery.scrollTo-1.4.2-min.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/jquery.tweet.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/json2.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/history.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/history.html4.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script src="/vendors/history.adapter.jquery.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+	<script src="/scripts/scripts.js?{{site.time | date: '%Y%m%d%H%M%S'}}"></script>
+    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-21529043-1']);
       _gaq.push(['_trackPageview']);
@@ -93,6 +102,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script> 
+    </script>
 </body>
 </html>
