@@ -9,16 +9,16 @@
 				</p>
 				<ul class="menu" id="courses-list">
 					<li>
-						<a href="/training/php.html" id="course_link_1">PHP Training</a>
+						<a href="training/php.html" id="course_link_1">PHP Training</a>
 					</li>
 					<li>
-						<a href="/training/zend-framework.html" id="course_link_2">Zend Framework Training</a>
+						<a href="training/zend-framework.html" id="course_link_2">Zend Framework Training</a>
 					</li>
 					<li>
-						<a href="/training/symfony.html" id="course_link_3">Symfony Training</a>
+						<a href="training/symfony.html" id="course_link_3">Symfony Training</a>
 					</li>
 					<li>
-						<a href="/training/doctrine.html" id="course_link_4">Doctrine ORM Training</a>
+						<a href="training/doctrine.html" id="course_link_4">Doctrine ORM Training</a>
 					</li>
 				</ul>
 			</div><!--// lefter-->
@@ -44,8 +44,8 @@
 									London
 								</p>
 								<p>
-									<a href="/contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/php.html" class="button button-2" title="PHP training">MORE INFORMATION</a>
+									<a href="contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
+									<a href="training/php.html" class="button button-2" title="PHP training">MORE INFORMATION</a>
 								</p>
 							</li><!--// slider-slide-->
 							<li class="slider-slide clearfix cols-3">
@@ -66,8 +66,8 @@
 									London
 								</p>
 								<p>
-									<a href="/contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/zend-framework.html" class="button button-2" title="Zend Framework training">MORE INFORMATION</a>
+									<a href="contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
+									<a href="training/zend-framework.html" class="button button-2" title="Zend Framework training">MORE INFORMATION</a>
 								</p>
 							</li><!--// slider-slide-->
 							<li class="slider-slide clearfix cols-3">
@@ -88,8 +88,8 @@
 									London
 								</p>
 								<p>
-									<a href="/contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/symfony.html" class="button button-2" title="Symfony training">MORE INFORMATION</a>
+									<a href="contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
+									<a href="training/symfony.html" class="button button-2" title="Symfony training">MORE INFORMATION</a>
 								</p>
 							</li><!--// slider-slide-->
 							<li class="slider-slide clearfix cols-3">
@@ -110,8 +110,8 @@
 									London
 								</p>
 								<p>
-									<a href="/contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
-									<a href="/training/doctrine.html" class="button button-2" title="Symfony training">MORE INFORMATION</a>
+									<a href="contact.html" class="button menu-link">RESERVE YOUR PLACE</a>
+									<a href="training/doctrine.html" class="button button-2" title="Symfony training">MORE INFORMATION</a>
 								</p>
 							</li><!--// slider-slide-->
 						</ul><!--// slider-inner-->

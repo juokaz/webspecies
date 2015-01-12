@@ -224,7 +224,7 @@ function handleTraining(url) {
                 lightboxSpeed: 0,
                 destroyOnClose: true,
                 onClose: function() {
-                    $('#main-menu a[href="/training"]').click();
+                    $('#main-menu a[href="training.html"]').click();
                 },
                 overlayCSS:	{background: 'black', opacity: .8}
             });
@@ -349,7 +349,7 @@ $(function(){
   	        // Continue as normal for cmd clicks etc
 	        if ( event.which == 2 || event.metaKey ) { return true; }
 
-	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/news"]').attr('title'));
+	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="news.html"]').attr('title'));
 
 	        event.preventDefault();
             return false;
@@ -363,7 +363,7 @@ $(function(){
 	        // Continue as normal for cmd clicks etc
 	        if ( event.which == 2 || event.metaKey ) { return true; }
 
-	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="/training"]').attr('title'));
+	        addHistory($(this).attr('title'),$(this).attr('href'), $('#main-menu a[href="training.html"]').attr('title'));
 
 	        event.preventDefault();
             return false;
@@ -377,7 +377,7 @@ $(function(){
             handleSections(topUrl, relativeUrl);
 
             $("#main-menu a").removeClass('active');
-            $("#main-menu a[href='/"+topUrl+".html']").addClass('active');
+            $("#main-menu a[href='"+topUrl+".html']").addClass('active');
 
             if ($("#main-menu a.active").size() > 0) {
                 if (topUrl == '') {

@@ -5,7 +5,7 @@ date: 2011-07-25 17:05:00
 summary: Today we are very excited to introduce our first product - SellerScout.
 ---
 
-Today we are very excited to introduce our first <a href="/products.html" class="menu-link">product</a> - [SellerScout](http://sellerscout.co.uk/). It's not quite ready to be released yet, but we are working hard to make this happen before the end of the summer.
+Today we are very excited to introduce our first <a href="products.html" class="menu-link">product</a> - [SellerScout](http://sellerscout.co.uk/). It's not quite ready to be released yet, but we are working hard to make this happen before the end of the summer.
 
 We are a web development company and we work on various different projects four our clients, but when we see opportunities we invest our resources to building products ourselves. This is a first of hopefully much more to come.
 

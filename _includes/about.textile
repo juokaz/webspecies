@@ -23,16 +23,16 @@
 					<div class="col fr">
 						<h3>Our Vision</h3>
 						<p>
-							To be <em>the</em> web solutions provider in UK. 
+							To be <em>the</em> web solutions provider in UK.
 						</p>
 						<p>
-						    There are a lot of companies already providing web solutions, but we see where we can be better. 
+						    There are a lot of companies already providing web solutions, but we see where we can be better.
 						</p>
 					</div>
 				</div>
 			</div><!--// lefter-->
 			<div class="righter fr">
-				<img src="/images/JOE.png" alt="Juozas Kaziukenas" />
+				<img src="images/JOE.png" alt="Juozas Kaziukenas" />
 				<a href="http://juokaz.com/"><br/></a>
 				<span class="person">
 					<span>Juozas <br> Kaziukenas</span><br/>

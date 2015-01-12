@@ -19,19 +19,19 @@
 			</div><!--//lefter-->
 			<div class="righter fr">
 				<p>
-					<a href="http://festivalslab.com/"><img src="/images/clients/festivalslab.png" width="150" height="80" alt="Festivals Lab" /></a>
-					<a href="http://www.oxodesign.no/"><img src="/images/clients/oxodesign.png" width="150" height="80" alt="OXODesign"></a>
+					<a href="http://festivalslab.com/"><img src="images/clients/festivalslab.png" width="150" height="80" alt="Festivals Lab" /></a>
+					<a href="http://www.oxodesign.no/"><img src="images/clients/oxodesign.png" width="150" height="80" alt="OXODesign"></a>
 				</p>
 				<p>
-					<a href="http://www.morrismediaworks.com/"><img src="/images/clients/morrismediaworks.png" width="150" height="80" alt="Morris Mediaworks"></a>
-					<a href="http://www.4cinc.com/"><img src="/images/clients/4cinc.png" width="150" height="80" alt="4C Media"></a>
+					<a href="http://www.morrismediaworks.com/"><img src="images/clients/morrismediaworks.png" width="150" height="80" alt="Morris Mediaworks"></a>
+					<a href="http://www.4cinc.com/"><img src="images/clients/4cinc.png" width="150" height="80" alt="4C Media"></a>
 				</p>
 				<p>
-					<a href="http://englor.co.uk/"><img src="/images/clients/englor.png" width="150" height="80" alt="Englor"></a>
+					<a href="http://englor.co.uk/"><img src="images/clients/englor.png" width="150" height="80" alt="Englor"></a>
 				</p>
 				<p>
 					<strong>Brands we had pleasure to work with:</strong><br>
-					<em>OXODesign TEAM, Morris Mediaworks, 4C Media, Englor</em>							
+					<em>OXODesign TEAM, Morris Mediaworks, 4C Media, Englor</em>
 				</p>
 			</div><!--// righter-->
 		</div><!--// slide-inner-->

@@ -43,13 +43,13 @@
 		                <p>
 			                Our experts offer training courses in major UK cities or privately at your office. To see the courses schedule press below
 		                </p>
-		                <a href="/training.html" class="shedule menu-link">TRAINING COURSES SCHEDULE</a>
+		                <a href="training.html" class="shedule menu-link">TRAINING COURSES SCHEDULE</a>
 	                </div>
                 </div>
                 <div class="item-3">
 	                <h2>Consulting</h2>
 	                <p>
-		                Need help with a project your team is working on? We just might be able to help. <a href="/contact" class="menu-link">Get in touch!</a>
+		                Need help with a project your team is working on? We just might be able to help. <a href="contact.html" class="menu-link">Get in touch!</a>
 	                </p>
                 </div>
             </div><!--// bubles-->
