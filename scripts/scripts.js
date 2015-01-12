@@ -251,6 +251,7 @@ function gotoActiveSlide() {
         var topUrl = History.getState().url.replace(History.getRootUrl(),'').split('/')[0].replace('.html', '');
 
         if (topUrl !== "") {
+            topUrl = topUrl.replace('.html', '');
             var offset = $("a[name="+topUrl+"]").parent().offset().top;
             $('html, body').scrollTo(offset, 0, {easing:'swing', duration:0});
         }
@@ -282,7 +283,7 @@ $(function(){
         }
 
         // load all content
-        $('.content-slides').load('/slides.html', function() {
+        $('.content-slides').load('slides.html', function() {
             gotoActiveSlide();
 
             //top carousel
@@ -380,6 +381,7 @@ $(function(){
             $("#main-menu a[href='"+topUrl+".html']").addClass('active');
 
             if ($("#main-menu a.active").size() > 0) {
+                topUrl = topUrl.replace('.html', '');
                 if (topUrl == '') {
                     topUrl = 'services';
                 }
