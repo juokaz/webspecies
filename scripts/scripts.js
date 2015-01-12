@@ -1,3 +1,4 @@
+tweet
 function carousel1_initCallback(carousel) {
  $('.dots a').bind('click', function() {
   carousel.scroll(jQuery.jcarousel.intval($(this).attr('id').replace('top_dot_', '')));
@@ -248,7 +249,7 @@ function gotoActiveSlide() {
     fixParameters();
 
     if ($(".static").length == 0) {
-        var topUrl = History.getState().url.replace(History.getRootUrl(),'').split('/')[0].replace('.html', '');
+        var topUrl = History.getState().url.replace(getRootUrl(),'').split('/')[0].replace('.html', '');
 
         if (topUrl !== "") {
             var offset = $("a[name="+topUrl+"]").parent().offset().top;
@@ -257,11 +258,16 @@ function gotoActiveSlide() {
     }
 }
 
+function getRootUrl()
+{
+    return History.getRootUrl() + "webspecies/";
+}
+
 $(function(){
 
     var	dynamic = $(".static").length == 0,
         History = window.History,
-	    rootUrl = History.getRootUrl() + "webspecies/",
+	    rootUrl = getRootUrl(),
         url = History.getPageUrl();
 
 	fixParameters();
@@ -444,14 +450,14 @@ $(function(){
 
     $('#toggle-tweet').toggle(function(){$("#tweet").toggle(200);}, function(){ $("#tweet").toggle(200);});
 
-    $("#tweet").tweet({
+    /*$("#tweet").tweet({
         avatar_size: 32,
         count: 1,
         fetch: 10,
         filter: function(t){ return ! /^@\w+/.test(t["tweet_raw_text"]); },
         template: '<p class="tweet">{text}</p><p class="time">--- {time}</p>',
         username: "webspecies",
-      });
+      });*/
 
     $('#contacts-form').live('submit', function() {
         $('.submit').val('SEND');
